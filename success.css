@@ -1,0 +1,238 @@
+body {
+    background-image: url("img/Captive Portal Background-edited.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 100%;
+    margin: 0;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.column-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#join-btn {
+    margin: auto;
+    display: block; /* Makes it a block element to take full width */
+    width: 32vw; /* 90% of the viewport width */
+    max-width: 288.95px; /* Optional: Cap the button size on larger screens */
+    padding: 16.2px 0; /* Adjust vertical padding */
+    font-size: 3vw; /* Font size for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    background-image: linear-gradient(to right, #d4f5fb, #007bff); /* Gradient from white to blue */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Light shadow */
+}
+
+#join-btn p {
+    margin: auto;
+    font-size: 27px;
+}
+
+/* Hover effect */
+#join-btn:hover {
+    background-color: #0056b3; /* Darker hover color */
+    border-color: #0056b3; /* Match border with hover color */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+/* images */
+
+.logo-gk {
+    display: flex;
+    align-items: center;      
+    height: 100%;           
+    width: 100%;  
+    padding-top: 7vh;     
+    padding-bottom: 2vh;   
+}
+
+.logo-gk img {
+    width: 150px;
+    margin: auto;
+}
+
+.wifi {
+    display: flex;
+    align-items: center;      
+    height: 100%;           
+    width: 100%;  
+    padding-top: 4.5vh;        
+}
+
+.wifi img {
+    width: 225px;
+    margin: auto;
+}
+
+#webImage {
+    width: 10%;
+}
+
+#fb {
+    width: 10%;
+}
+
+#email {
+    width: 10%;
+}
+
+/* text */
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    color: #155d85;
+    font-weight: 500;
+    max-width: 100%; /* Prevents overflowing horizontally */
+}
+
+.dialog-content h1 {
+    margin: auto;
+}
+
+.dialog-content p {
+    margin: auto;
+}
+
+.header-group {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px    
+}
+
+.header-group h1, p {
+    margin: auto;
+    text-align: center;
+}
+
+.header-group h1 {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.header-group .lokalwifi-name {
+    color: #15bdd7;
+    font-weight: 700;
+}
+
+.header-group p {
+    /* margin-top: -7px */
+}
+
+.main-group {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+    max-width: 100%; /* Prevents overflowing horizontally */
+}
+
+.main-group b {
+    font-weight: 700;
+}
+
+.main-group .lokalwifi-name {
+    margin-top: 0;
+    /* margin-bottom: -2%; */
+    color: #15bdd7;
+    font-weight: 700;
+    font-size: 250%;
+}
+
+.hotspot-partner {
+    line-height: 1.0;
+    font-weight: 700;
+    font-size: 250%;
+    padding: 0;
+}
+
+.main-group .first-content {
+    margin-bottom: 40px;
+}
+
+.main-group .second-content {
+    font-size: 130%
+}
+
+.second-content .last-content{
+    margin-top: 12px;
+}
+
+/* Contacts */
+
+.contacts {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webAndFB {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+    gap: 20px; /* Space between the images */
+    margin-bottom: 4.4vh;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 24.63px;
+}
+
+.logo-text p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+}
+
+.contact-images {
+    object-fit: contain; Ensures the image fits within the given size
+}
+
+#email {
+    height: 30vw;
+}
+
+#fb {
+    height: 30vw;
+}
+
+#webImage {
+    height: 30vw;
+}
+
+/* Media Query Screen Size (opted for 900px over 600 and 460) */
+@media (max-width: 900px) {
+    body {
+        font-size: 2.1vw;
+    }
+
+    .logo-gk img {
+        width: 16%;
+    }
+
+    .wifi img {
+        width: 24%;
+    }
+    
+    #join-btn p {
+        font-size: 3vw;
+    }
+
+    #join-btn {
+        padding: 1.8vw 0;
+    }
+}
